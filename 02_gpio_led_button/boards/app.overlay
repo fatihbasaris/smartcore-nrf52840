@@ -1,0 +1,41 @@
+/ {
+    leds {
+        compatible = "gpio-leds";
+
+        user_led0: led_0 {
+            gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
+            label = "User LED 0";
+        };
+
+        user_led1: led_1 {
+            gpios = <&gpio1 13 GPIO_ACTIVE_HIGH>;
+            label = "User LED 1";
+        };
+
+    };
+
+    buttons {
+        compatible = "gpio-keys";
+
+        user_button0: button_0 {
+            gpios = <&gpio1 9 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "User Button 0";
+        };
+    };
+
+    gpio_outputs {
+        compatible = "gpio-leds";
+
+        mc60_pwr: mc60_pwr_0 {
+            gpios = <&gpio0 26 GPIO_ACTIVE_HIGH>;
+            label = "MC60 PWR";
+        };
+    };
+
+    aliases {
+        led0 = &user_led0;
+        led1 = &user_led1;
+        sw0  = &user_button0;
+        pwr0 = &mc60_pwr;
+    };
+};
