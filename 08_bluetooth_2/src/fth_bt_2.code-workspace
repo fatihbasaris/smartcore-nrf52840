@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "fth_bt_2",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"nrf-connect.applications": [
+			"${workspaceFolder}"
+		]
+	}
+}
