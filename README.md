@@ -5,6 +5,8 @@ smartcore-nrf52840 custom board
 Practical nRF52840 examples developed with Zephyr RTOS and nRF Connect SDK.
 
 Projects:
+- 01_blink
+- 02_gpio_led_button
 - 03_usb_cdc_acm
 - 04_uart_tx
 - 05_uart_rx_echo
